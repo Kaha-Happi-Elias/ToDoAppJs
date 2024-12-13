@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQToDoApp</title>
+    <link rel="stylesheet" href="css/ToDo.css"> <!-- this is the external css of my calculator -->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css"> <!-- this is the bootstrap css of my calculator -->
+    
+    <script src="js/jquery-3.7.1.js"></script>
+</head>
+<body>
+    <div class="content text-center">
+        <div class="inf d-flex justify-content-around align-self-center m-4">
+            <div class="errorPath">
+                <input type="text" class="d-inline p-2 rounded"  name="title" id="taskIn" placeholder="Enter a card name">
+                <div id="form-error-1" class="text-danger"></div>
+            </div>
+            <button class="btn btn-success d-inline p-2" id="taskBtn">Create</button>
+        </div>
+        <div id="tasks" class="row m-5">
+          <!-- <div id="cont" class="col-md-4 mb-4"> 
+                <div class="container position-relative rounded p-3">
+                    <div class="task-controls d-flex fs-6 position-absolute top-0 end-0">
+                        <button class="btn task-edit text-success" data-uip="${uip}">Edit</button>
+                        <button class="btn task-save text-primary" style="display:none" data-uip="${uip}">Save</button>
+                        <button class="btn task-delete text-danger" data-uip="${uip}">Delete</button>
+                    </div>
+                    <h2 class="text-light fw-bold mt-3 mb-3">ToDoApp 1</h2>
+                    <div class="new-note">
+                        <input type="text" class="d-block p-3 border border-0 fs-2 w-100 rounded-top fw-bold" name="title1" id="title1" placeholder="Title">
+                        <textarea name="content1" class="d-block p-3 border border-top-0 w-100 rounded-bottom" id="content1" placeholder="Write down the description of your title"></textarea>
+                        <div id="form-error1"></div>
+                    </div>
+                    <div class="button-container mt-4">
+                        <button class="add-btn btn btn-success" onclick="addNote1()">Submit</button>
+                    </div>
+                    <div class="overflow-y-auto rounded mt-2">
+                        <div id="notes-wrapper1">
+                            <div class="note overflow-hidden rounded position-relative d-flex justify-content-evenly align-self-center p-3 bg-light">
+                                <div class="note-complete m-1">
+                                    <label for="complete-${uid}">Complete</label>
+                                    <input type="checkbox" id="complete-${uid}" ${completed ? 'checked' : ''}>
+                                </div>
+                                <div class="note-title fs-3 mb-2 w-100 text-start" contenteditable="false">${title}</div>
+                                <div class="note-controls d-flex fs-6 p-1 column-gap-3 position-absolute top-0 end-0">
+                                    <button class="btn  note-edit text-success" data-uip="${uip}" data-uid="${uid}">Edit</button>
+                                    <button class="btn note-save text-primary style="display:none" data-uip="${uip}" data-uid="${uid}">Save</button>
+                                    <button class="btn note-delete text-danger data-uip="${uip}" data-uid="${uid}">Delete</button>
+                                </div>
+                                <div class="note-text mb-4 w-100 text-start" contenteditable="false">${text}</div>
+                                <div class="note-date position-absolute bottom-0 end-0 fs-6 w-100 mb-2">${date}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+    <script src="js/bootstrap.bundle.min.js"></script> <!-- this is the bootstrap JS of my calculator -->
+    <script src="js/ToDo.js"></script> <!-- this is the external js of my calculator -->
+</body>
+</html>
